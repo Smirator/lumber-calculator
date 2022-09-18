@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="article-desc">
+        <div class="container">
+            <div class="static-content">
+                <h1>Калькулятор расчета имитации бруса</h1>
+                <p>
+                    Благодаря онлайн-калькулятору вы сможете расчитать параметры имитации бруса и его необходимое количество для облицовки стен.
+                </p>
+                <div class="wrapper-calculator-block">
+                    <div class="wrapper-calculator-block-text">
+                        <p class="wrapper-calculator-block-text-title">
+                            Как пользоваться калькулятором?
+                        </p>
+                        <ol>
+                            <li>Введите параметры имитации бруса: высоту, ширину, длину (они указаны в <a href="/catalog/imitation/">карточках товаров</a> в миллиметрах).</li>
+                            <li>Укажите, в чем считаете: в штуках или в кубах. Нажмите "Рассчитать".</li>
+                            <li>В графе "Результат" появится итог вычислений.</li>
+                            <li>Для расчета в кубах будет указано количество штук в указанном количестве кубов, общая площадь и примерный вес имитации бруса.</li>
+                            <li>Для расчета в штуках будет показан объем, площадь и примерный вес.</li>
+                        </ol>
+                    </div>
+                    <div class="calculator-block options p-15">
+                        <form name="calc" class="calc-form">
+                            <h2 class="calculator-title">Расчет параметров имитации бруса</h2>
+                            <div class="wrapper-calc-timber-imitation">
+                                <div>
+                                    <p class="calculator-text-value">
+                                        Толщина имитации бруса(мм)
+                                    </p>
+     <input id="height" name="heigth" class="calculator-value" list="height-value">
+                                    <p class="calculator-text-value">
+                                        Ширина имитации бруса(мм)
+                                    </p>
+     <input id="width" type="text" name="width" class="calculator-value" list="width-value">
+                                    <p class="calculator-text-value">
+                                        Длина имитации бруса(мм)
+                                    </p>
+     <input id="length" name="length" class="calculator-value" list="length-value">
+                                    <div class="wrapper-meaning-calculation">
+                                        <p class="calculator-text-value">
+                                            Количество
+                                        </p>
+                                        <select name="" id="meaningCalculation">
+                                            <option value="things">штук</option>
+                                            <option value="cubes">кубов</option>
+                                        </select>
+                                    </div>
+     <input id="amount" name="cube" class="calculator-value">
+                                </div>
+                            </div>
+                            <div class="wrapper-calculator-block-btn">
+     <button type="button" name="button" class="calculator-block-btn btn-options" id="button">Рассчитать</button>
+                            </div>
+                        </form>
+                        <div class="wrapper-result result-options">
+                            <div class="calculator-block-result">
+                                <h3 class="calculator-text-result">Результат</h3>
+                                <p id="result" class="calculator-value-result">
+                                    Введите значения
+                                </p>
+                                <p id="surface-area" class="calculator-value-result">
+                                </p>
+                                <p id="weight-result" class="calculator-value-result">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-calculator-block">
+                    <div class="wrapper-calculator-block-text-amount">
+                        <ol>
+                            <li>Для раcчета количества нужного материала: выберите размер из выпадающего списка.</li>
+                            <li>Укажите ширину и высоту помещения.</li>
+                            <li>Если необходимо вычесть размер дверного или оконного проема, то укажите их высоту, ширину и количество.</li>
+                            <li>Нажмите на кнопку "Рассчитать".</li>
+                            <li>В правой графе будет: общая площадь покрытия и необходимое количество материала, в штуках. </li>
+                        </ol>
+                    </div>
+                    <div class="calculator-block amount p-15">
+                        <form name="calc" class="calc-form">
+                            <h2 class="calculator-title">Расчет количества имитации бруса</h2>
+                            <div class="wrapper-calc-timber-imitation">
+                                <div>
+                                    <h6 class="calculator-title">Размер помещения</h6>
+                                    <p>
+                                        Размер материала
+                                    </p>
+                                    <select class="aperture-value" id="select-options-imitation">
+                                        <option id="val1" value="" class="val">17*146*3000</option>
+                                        <option id="val2" value="" class="val">17*146*4000</option>
+                                        <option id="val3" value="" class="val">17*146*6000</option>
+                                        <option id="val4" value="" class="val">21*143*6000</option>
+                                        <option id="val5" value="" class="val">21*146*6000</option>
+                                        <option id="val6" value="" class="val">21*193*6000</option>
+                                        <option id="val7" value="" class="val">36*196*4000</option>
+                                        <option id="val8" value="" class="val">36*196*5000</option>
+                                        <option id="val9" value="" class="val">36*196*6000</option>
+                                        <option id="val10" value="" class="val">21*143*6000</option>
+                                        <option id="val11" value="" class="val">21*176*6000</option>
+                                    </select>
+                                    <p class="calculator-text-value">
+                                        Ширина помещения(м)
+                                    </p>
+     <input id="width-room" class="aperture-value important-val">
+                                    <p class="calculator-text-value">
+                                        Высота помещения(м)
+                                    </p>
+     <input id="heigth-room" class="aperture-value important-val">
+                                </div>
+                                <div class="wrapper-aperture">
+                                    <div>
+                                        <h6 class="calculator-title">Дверной проем</h6>
+                                        <div class="block-aperture">
+                                            <div>
+                                                <p>
+                                                    Высота(мм)
+                                                </p>
+     <input id="heightApertureDoor" class="aperture-value">
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    Ширина(мм)
+                                                </p>
+     <input id="widthApertureDoor" class="aperture-value">
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    Количество
+                                                </p>
+     <input id="amountApertureDoor" class="aperture-value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="calculator-title">Оконный проем</h6>
+                                        <div class="block-aperture">
+                                            <div>
+                                                <p>
+                                                    Высота(мм)
+                                                </p>
+     <input id="heightApertureWindow" class="aperture-value">
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    Ширина(мм)
+                                                </p>
+     <input id="widthApertureWindow" class="aperture-value">
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    Количество
+                                                </p>
+     <input id="amountApertureWindow" class="aperture-value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper-calculator-block-btn">
+     <button type="button" name="button" class="calculator-block-btn btn-amount" id="button">Рассчитать</button>
+                            </div>
+                        </form>
+                        <div class="wrapper-result result-amount">
+                            <div class="calculator-block-result">
+                                <h3 class="calculator-text-result">Результат</h3>
+                                <p id="room-area-result" class="calculator-value-result">
+                                    Введите значения
+                                </p>
+                                <p id="number-pieces-result" class="calculator-value-result">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

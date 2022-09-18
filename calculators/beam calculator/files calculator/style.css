@@ -4,18 +4,7 @@
   margin: 0 auto;
 }
 
-.responsive-table {
-  width: 100%;
-}
 
-.responsive-table thead {
-  background-color: #a4ba9b;
-  color: #ffffff;
-}
-
-.responsive-table tbody tr {
-  border-bottom: 1px solid gray;
-}
 .wrapper-calculator-block {
   display: flex;
   margin: 40px 0px 40px 0px;
